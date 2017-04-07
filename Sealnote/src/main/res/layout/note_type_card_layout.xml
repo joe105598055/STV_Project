@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/nc_vertical_margin"
+       android:paddingLeft="@dimen/activity_horizontal_margin"
+       android:paddingRight="@dimen/activity_horizontal_margin"
+        >
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            style="@style/NoteContentCard"
+            >
+        <EditText
+                android:id="@+id/note_card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/note_card_name"
+                android:inputType="textPersonName|textCapWords"
+                android:textAllCaps="true"
+                style="@style/NoteContentCard_EditText"
+                />
+
+        <EditText
+                android:id="@+id/note_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/note_card_number"
+                android:inputType="number"
+                android:digits="0123456789- "
+                android:textStyle="bold"
+                style="@style/NoteContentCard_EditText"
+                />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note_card_valid_from"
+                    android:typeface="monospace"
+                    android:textAllCaps="true"
+                    />
+
+            <EditText
+                    android:id="@+id/note_card_valid_from"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/nc_card_horizontal_spacing"
+                    android:inputType="number"
+                    android:digits="0123456789/-"
+                    style="@style/NoteContentCard_EditText"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:typeface="monospace"
+                    android:text="@string/note_card_valid_upto"
+                    android:textAllCaps="true"
+                    />
+
+            <EditText
+                    android:id="@+id/note_card_valid_upto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/nc_card_horizontal_spacing"
+                    android:inputType="number"
+                    android:digits="0123456789/-"
+                    style="@style/NoteContentCard_EditText"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:typeface="monospace"
+                    android:text="@string/note_card_cvv"
+                    />
+            <EditText
+                    android:id="@+id/note_card_cvv"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/nc_card_horizontal_spacing"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    style="@style/NoteContentCard_EditText"
+                    />
+
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.1" />
+
+            <ImageView
+                    android:id="@+id/note_card_brand"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/nc_card_vertical_spacing"
+                    android:layout_gravity="right|bottom"
+                    />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/note_card_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/note_additional_notes"
+            android:background="@android:color/transparent"
+            android:paddingTop="@dimen/note_view_vertical_margin"
+            android:paddingBottom="@dimen/note_view_vertical_margin"
+            android:textSize="@dimen/nc_font_size"
+            android:textColor="@color/note_foreground"
+            android:textColorLink="@color/note_foreground"
+            android:inputType="textCapSentences|textMultiLine"
+            android:autoText="false"
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:textColorHint="@color/note_hint_foreground"
+            />
+
+</LinearLayout>

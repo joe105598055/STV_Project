@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Preferences for SealNote
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_catGeneral">
+        <CheckBoxPreference
+                android:key="AutoSave"
+                android:title="@string/pref_autoSave"
+                android:defaultValue="false"
+                android:summary="@string/pref_autoSaveSummary"
+                />
+
+        <CheckBoxPreference
+                android:key="SecureWindow"
+                android:title="@string/pref_secureWindowTitle"
+                android:defaultValue="false"
+                android:summary="@string/pref_secureWindowSummary"
+                />
+
+        <ListPreference
+                android:key="PasswordTimeout"
+                android:title="@string/pref_passwordTimeout"
+                android:dialogTitle="@string/pref_passwordTimeout"
+                android:entries="@array/pref_passwordTimeoutValueNames"
+                android:entryValues="@array/pref_passwordTimeoutValues"
+                android:defaultValue="10000"
+                android:summary="@string/pref_passwordTimeoutSummary"
+                />
+
+        <com.twistedplane.sealnote.settings.PasswordPreference
+            android:title="@string/pref_changePassword"
+            android:dialogTitle="@string/pref_changePassword"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_catAppearance">
+        <ListPreference
+                android:key="NoteListViewType"
+                android:title="@string/pref_noteListViewType"
+                android:dialogTitle="@string/pref_noteListViewType"
+                android:entries="@array/pref_noteListViewTypeNames"
+                android:entryValues="@array/pref_noteListViewTypeValues"
+                android:defaultValue="tiles"
+                android:summary="@string/pref_noteListViewTypeSummary"
+                />
+
+        <CheckBoxPreference
+                android:key="NoteActivityBackground"
+                android:title="@string/pref_noteActivityBg"
+                android:defaultValue="true"
+                android:summary="@string/pref_noteActivityBgSummary"
+                />
+
+        <CheckBoxPreference
+                android:key="DynamicFontSize"
+                android:title="@string/pref_dynamicFontSize"
+                android:defaultValue="true"
+                android:summary="@string/pref_dynamicFontSizeSummary"
+                />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_catStorage">
+        <Preference
+                android:title="@string/pref_backup"
+                android:persistent="false">
+            <intent
+                    android:action="android.intent.action.VIEW"
+                    android:targetPackage="com.twistedplane.sealnote"
+                    android:targetClass="com.twistedplane.sealnote.BackupActivity"
+                    />
+        </Preference>
+
+        <Preference
+                android:title="@string/pref_restore"
+                android:persistent="false">
+            <intent
+                    android:action="android.intent.action.VIEW"
+                    android:targetPackage="com.twistedplane.sealnote"
+                    android:targetClass="com.twistedplane.sealnote.RestoreActivity"
+                    />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/help_and_about">
+        <Preference
+                android:title="@string/write_a_review"
+                android:persistent="false">
+            <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="market://details?id=com.twistedplane.sealnote"
+                    />
+        </Preference>
+        <com.twistedplane.sealnote.settings.VersionPreference />
+        <Preference
+                android:title="@string/acknowledgements"
+                android:persistent="false">
+            <intent
+                    android:action="android.intent.action.VIEW"
+                    android:targetPackage="com.twistedplane.sealnote"
+                    android:targetClass="com.twistedplane.sealnote.WebViewActivity"
+                    />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

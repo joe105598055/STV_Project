@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Action Bar for NoteActivity
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.twistedplane.sealnote.NoteActivity">
+
+    <item android:id="@+id/action_share"
+          android:title="@string/action_share"
+          android:showAsAction="never"
+          android:actionProviderClass="android.widget.ShareActionProvider"
+          />
+    <item android:id="@+id/action_color"
+          android:title="@string/action_color"
+          android:showAsAction="ifRoom"
+          android:icon="@drawable/ic_menu_color"
+          />
+
+    <item android:id="@+id/action_archive"
+          android:title="@string/action_archive"
+          android:showAsAction="ifRoom"
+          android:icon="@drawable/ic_action_archive_light"
+            />
+
+    <item android:id="@+id/action_unarchive"
+          android:title="@string/action_unarchive"
+          android:showAsAction="ifRoom"
+          android:icon="@drawable/ic_action_unarchive"
+            />
+
+    <item android:id="@+id/action_note_delete"
+          android:title="@string/action_delete"
+          android:showAsAction="ifRoom"
+          android:icon="@drawable/ic_action_discard_light"
+            />
+
+    <item android:id="@+id/action_save_note"
+          android:title="@string/action_save_note"
+          android:showAsAction="always"
+          android:icon="@drawable/ic_action_save"
+          />
+
+    <item android:id="@+id/action_restore"
+          android:title="@string/action_restore"
+          android:icon="@drawable/ic_action_refresh"
+          android:showAsAction="always|withText"
+            />
+</menu>

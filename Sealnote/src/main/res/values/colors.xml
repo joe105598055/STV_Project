@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Colors
+-->
+<resources>
+
+    <!-- actionbar -->
+    <item name="light_gray" type="color">#ffececec</item>
+
+    <item name="theme_background" type="color">#0099bb</item>
+    <item name="theme_background_pressed" type="color">#005b70</item>
+    <item name="actionbar_item_pressed_background" type="color">#55000000</item>
+
+    <item name="drawer_item_text" type="color">#ff666666</item>
+    <item name="drawer_item_text_checked" type="color">#ff005b70</item>
+
+    <item name="transparent" type="color">#00000000</item>
+    <item name="note_view_tint" type="color">#22ffffff</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="note_foreground" type="color">#de000000</item>
+    <item name="note_hint_foreground" type="color">#44171717</item>
+    <color name="card_text_color">@color/note_foreground</color>
+    <color name="card_text_color_header">#bb000000</color>
+
+    <color name="tag_bubble_foreground">#def0f0f0</color>
+
+    <item name="pressed_grey" type="color">#ffd3d3d3</item>
+    <color name="list_button_pressed">@color/pressed_grey</color>
+
+    <!-- simple list view -->
+    <color name="simplelistview_activated" type="color">#ffe0e0e0</color>
+    <color name="simplelistview_pressed" type="color">#fff4f4f4</color>
+    <color name="simplelistview_selected" type="color">#fff4f4f4</color>
+
+    <!-- color card -->
+    <!--<color name="card_background_color0">#ffecf0f1</color>--> <!-- Cloudy -->
+    <color name="card_background_color0">#ffffffff</color>
+    <color name="card_background_color1">#ffffbb22</color>
+    <color name="card_background_color2">#ffeeee22</color>
+    <color name="card_background_color3">#ffbbe535</color>
+    <color name="card_background_color4">#ff66ccdd</color>
+    <color name="card_background_color5">#ff77ddbb</color>
+    <color name="card_background_color6">#ffb5c5c5</color>
+    <color name="card_background_color7">#fff56545</color>
+
+    <integer-array name="note_colors">
+        <item>@color/card_background_color0</item>
+        <item>@color/card_background_color1</item>
+        <item>@color/card_background_color2</item>
+        <item>@color/card_background_color3</item>
+        <item>@color/card_background_color4</item>
+        <item>@color/card_background_color5</item>
+        <item>@color/card_background_color6</item>
+        <item>@color/card_background_color7</item>
+    </integer-array>
+
+    <string-array name="note_colors_name">
+        <item>color0</item>
+        <item>color1</item>
+        <item>color2</item>
+        <item>color3</item>
+        <item>color4</item>
+        <item>color5</item>
+        <item>color6</item>
+        <item>color7</item>
+    </string-array>
+
+</resources>

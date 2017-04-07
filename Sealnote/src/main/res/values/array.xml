@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Arrays
+-->
+
+<resources>
+    <!-- Timeout values -->
+    <string-array name="pref_passwordTimeoutValueNames">
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>1.5 minutes</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+    </string-array>
+
+    <string-array name="pref_passwordTimeoutValues">
+        <item>10000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>90000</item>
+        <item>120000</item>
+        <item>300000</item>
+    </string-array>
+
+    <!-- Note List View layouts -->
+    <string-array name="pref_noteListViewTypeNames">
+        <item>Tiles</item>
+        <item>Single Column</item>
+        <item>Simple List</item>
+    </string-array>
+
+    <string-array name="pref_noteListViewTypeValues">
+        <item>tiles</item>
+        <item>column</item>
+        <item>simplelist</item>
+    </string-array>
+
+    <!-- Navigation drawer values -->
+    <string-array name="navigation_drawer">
+        <item>Notes</item>
+        <item>Archive</item>
+        <item>Trash</item>
+    </string-array>
+
+    <array name="navigation_drawer_icons">
+        <item type="drawable">@drawable/ic_action_collection</item>
+        <item type="drawable">@drawable/ic_action_archive</item>
+        <item type="drawable">@drawable/ic_action_discard</item>
+    </array>
+
+</resources>

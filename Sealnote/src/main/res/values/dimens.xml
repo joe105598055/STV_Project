@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Dimensions
+-->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="sealnote_activity_horizontal_margin">2dp</dimen>
+    <dimen name="sealnote_activity_vertical_margin">0dp</dimen>
+
+    <!--
+                    Card contents
+    -->
+
+    <!-- padding for inner content -->
+    <dimen name="cardcontent_padding_left">8dp</dimen>
+    <dimen name="cardcontent_padding_right">8dp</dimen>
+    <dimen name="cardcontent_padding_top">2dp</dimen>
+    <dimen name="cardcontent_padding_bottom">6dp</dimen>
+
+    <!-- margins -->
+    <dimen name="cardcontent_margin_left">0dp</dimen>
+    <dimen name="cardcontent_margin_right">0dp</dimen>
+    <dimen name="cardcontent_margin_top">0dp</dimen>
+    <dimen name="cardcontent_margin_bottom">0dp</dimen>
+
+    <!-- font size -->
+    <dimen name="cardcontent_title_size">14sp</dimen>
+    <dimen name="cardcontent_note_size">16sp</dimen>
+
+    <!-- override default -->
+    <dimen name="card_background_default_radius">0dip</dimen>
+
+    <!--
+                    Note Activity
+    -->
+
+    <!-- margins -->
+
+    <dimen name="note_view_horizontal_margin">18dp</dimen>
+    <dimen name="note_view_vertical_margin">14dp</dimen>
+
+    <dimen name="note_view_edited_font_size">12sp</dimen>
+
+
+    <!--
+                    Password Activity
+    -->
+    <dimen name="password_activity_horizontal_margin">36dp</dimen>
+    <dimen name="password_activity_vertical_margin">36dp</dimen>
+
+    <dimen name="password_activity_button_horizontal_padding">28dp</dimen>
+    <dimen name="password_activity_button_vertical_padding">18dp</dimen>
+
+    <!-- Change password dialog -->
+    <dimen name="passoword_change_view_padding">8dp</dimen>
+    <dimen name="passoword_change_text_spacer">2dp</dimen>
+    <dimen name="passoword_change_text_category_spacer">8dp</dimen>
+
+    <!--
+                Note Content
+    -->
+    <dimen name="nc_font_size">20sp</dimen>
+
+    <dimen name="nc_vertical_margin">8dp</dimen>
+    <dimen name="nc_vertical_padding">8dp</dimen>
+
+    <!-- card note content -->
+    <dimen name="nc_card_vertical_spacing">2dp</dimen>
+    <dimen name="nc_card_horizontal_padding">10dp</dimen>
+    <dimen name="nc_card_horizontal_spacing">10dp</dimen>
+    <dimen name="nc_card_font_size">18sp</dimen>
+
+
+    <dimen name="password_meter_stroke_width">0dp</dimen>
+
+    <!-- backup and restore -->
+    <dimen name="br_font_size_big">24sp</dimen>
+    <dimen name="br_font_size_normal">22sp</dimen>
+
+</resources>
