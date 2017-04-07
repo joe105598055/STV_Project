@@ -44,7 +44,7 @@ public class ShowDegreeOfPasswordTest {
                 runtime.exec("pm clear com.twistedplane.sealnote");
 
             } catch (Exception e) {
-                e.printStackTrace();
+//                e.printStackTrace();
             }
     }
     @Test
